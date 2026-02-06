@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:techblog.musinsa.com)",
+      "Bash(git push:*)",
+      "Bash(export JAVA_HOME=\"C:/Users/user/.jdks/corretto-21.0.7\")",
+      "Bash(./gradlew test:*)",
+      "Bash(find:*)",
+      "Bash(./gradlew clean test:*)",
+      "Bash(./gradlew properties:*)",
+      "Bash(\"$JAVA_HOME/bin/java\" -version)",
+      "Bash(\"$JAVA_HOME/bin/java\" -cp \"build/classes/java/test;build/classes/java/main\" org.example.domain.tag.ConfidenceScoreTest)",
+      "Bash(./gradlew:*)",
+      "Bash(cmd.exe //c \"set JAVA_HOME=C:\\\\Users\\\\user\\\\.jdks\\\\corretto-21.0.7 && cd /d C:\\\\Users\\\\user\\\\개인프로젝트\\\\testshop && gradlew.bat clean test 2>&1\")",
+      "Bash(cmd.exe //c \"set JAVA_HOME=C:\\\\Users\\\\user\\\\.jdks\\\\corretto-21.0.7&& cd /d \"\"C:\\\\Users\\\\user\\\\개인프로젝트\\\\testshop\"\" && gradlew.bat clean test\")",
+      "Bash(chcp:*)",
+      "Bash(chcp.com:*)",
+      "Bash(cmd.exe //c \"chcp 65001 && set \"\"JAVA_HOME=C:\\\\Users\\\\user\\\\.jdks\\\\corretto-21.0.7\"\" && cd /d \"\"C:\\\\Users\\\\user\\\\개인프로젝트\\\\testshop\"\" && gradlew.bat clean test\")",
+      "Bash(cmd.exe //c \"for %I in \\(\"\"C:\\\\Users\\\\user\\\\개인프로젝트\\\\testshop\"\"\\) do @echo %~sI\")",
+      "Bash(powershell.exe:*)"
+    ]
+  }
+}

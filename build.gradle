@@ -5,6 +5,8 @@ plugins {
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
+layout.buildDirectory = file("C:/tmp/testshop-build")
+
 repositories {
     mavenCentral()
 }
@@ -15,6 +17,16 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 test {
     useJUnitPlatform()
+    jvmArgs '-Dfile.encoding=UTF-8', '-Dsun.jnu.encoding=UTF-8'
 }
